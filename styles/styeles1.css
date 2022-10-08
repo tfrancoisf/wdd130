@@ -1,0 +1,28 @@
+body {
+    background-color: pink;
+    font-size: 18px;
+}
+h1, h3, .para, .quote {
+    text-align: center;
+    color: white;
+}
+h1:hover {
+    color: black;
+}
+#list-box {
+    margin: 0 auto;
+    text-align: center;
+}
+img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+.quote {
+    font-size: 45px;
+    width: 400px;
+    margin: 0 auto;
+}
+footer p {
+    text-align: center;
+}
