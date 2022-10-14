@@ -1,0 +1,37 @@
+body {
+    background-color: white;
+}
+img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.box {
+    display: block;
+    background-color: grey;
+    padding: 45px;
+}
+.desk-img {
+    display: inline;
+    width: 160px;
+    margin: 35px;
+    border-radius: 50%;
+    border: 10px solid rgb(78, 74, 74);
+}
+.graph-img {
+    display: inline;
+    width: 160px;
+    margin: 35px;
+    border-radius: 50%;
+    border: 10px solid rgb(78, 74, 74);
+}
+.person-img {
+    display: inline;
+    width: 160px;
+    margin: 35px;
+    border-radius: 50%;
+    border: 10px solid rgb(78, 74, 74);
+}
+#grid {
+    text-align: center;
+}
