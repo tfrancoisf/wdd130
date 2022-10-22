@@ -10,8 +10,9 @@ h1:hover {
     color: black;
 }
 #list-box {
-    margin: 0 auto;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 400px auto;
+    margin: 0 40%;
 }
 img {
     width: 20%;
