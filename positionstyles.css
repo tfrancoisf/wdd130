@@ -155,7 +155,7 @@
   width: 100%; 
   height: 100px; 
   background-color: blue;
-  margin-top: none; 
+  margin-top: 0; 
 } 
 /* Activity 6 styles */ 
 .content6 {
