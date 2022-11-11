@@ -1,0 +1,21 @@
+img {
+    width: 100%;
+    /*height: 30%;*/
+}
+.gridbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2px;
+}
+.color1 {
+    background-color: rgb(5, 5, 63);
+    height: 100px;
+}
+.color2 {
+    background-color: rgb(5, 5, 63);
+    height: 100px;
+}
+.color3 {
+    background-color: rgb(5, 5, 63);
+    height: 100px;
+}

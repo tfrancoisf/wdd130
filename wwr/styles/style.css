@@ -186,6 +186,97 @@ footer p a:hover {
 footer .social img {
     padding-top: 15px;
 }
+
+/*----------------------------------------------------------------*/
+
+#title-box h1 {
+    text-align: center;
+    font-size: 2em;
+    font-family: Caveat, cursive, kalam;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+.rivertp{
+    color: #000000;
+    margin-top: 10px;
+    font-family: Caveat, cursive, kalam;
+}
+.rivertitles {
+    font-family: Caveat, cursive, kalam;
+}
+.rivergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: -1;
+}
+.photo {
+    grid-column: 1/3;
+    grid-row: 1/6;
+    z-index: -1;
+}
+#layout-img {
+    height: 100%;
+    width: auto;
+    margin-left: 150px;
+    box-shadow: 10px 10px 10px#000000;
+}
+.card1 {
+    width: 540px;
+    height: 200px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-left: -550px;
+    margin-top: -20px;
+    background-color: #fca311;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    transition: transform .5s;
+}
+.card1:hover {
+    opacity: .9;
+    transform: scale(1.1);
+}
+.card2 {
+    width: 540px;
+    height: 200px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: -550px;
+    margin-top: -320px;
+    background-color: #fca311;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    transition: transform .5s;
+}
+.card2:hover {
+    opacity: .9;
+    transform: scale(1.1);
+}
+.card3 {
+    width: 540px;
+    height: 200px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-left: -550px;
+    margin-top: -90px;   
+    background-color: #fca311;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    transition: transform .5s;
+}
+.card3:hover {
+    opacity: .9;
+    transform: scale(1.1);
+}
+.riverpara {
+    font-size: .6em;
+    padding: 10px;
+    margin-top: -20px;
+    line-height: 1.5em;
+}
+
+/*--------------------------------------------------------------*/
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
