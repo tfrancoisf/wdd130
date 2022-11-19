@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babysitting</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="babysitting log">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a href="booking.html">Booking</a>
+            </nav>
+        </header>
+        <main class="booking-grid">
+            <section class="first-grid">
+                <div id="booking-info">
+                    <p>
+                        If in need, book now. Schedule shows days and time you can reserve for the service. 
+                        Choose the schedule that suits you best. Call 000-000-0000 and the address is 0000 Fake 
+                        address, Fake city, Fake state, 00000. I do not babysit every day, so booking time is 
+                        limited. Monday and Tuesday 7:00 AM-12:00PM. Wednesday and Thursday 1:00PM-6:00PM. Make sure 
+                        you reserve your days before it gets too late. My hourly rate is $14/hr. Payment will be 
+                        received when you drop the baby off each day
+                    </p>
+                </div>
+            </section>
+            <section class="form-area">
+                <div class="form-input">
+                    <form action="/my-handling-form-page" method="post">
+                        <ul>
+                            <li>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="user_name"/>
+                            </li>
+                            <li>
+                                <label for="mail">E-mail:</label>
+                                <input type="email" id="mail" name="user_email"/>
+                            </li>
+                            <li>
+                                <label for="msg">Message:</label>
+                                <textarea id="msg" name="user_message"></textarea>
+                            </li>
+                            <li class="button">
+                                <button type="submit">Send your message</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </section>
+            <section class="pic-area">
+                <div class="slidding-pic">
+                    <img src="images/fortunato6.jpg">
+                    <img src="images/third.jpg">
+                    <img src="images/willsantt.jpg">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Babysit &copy; 2022 - Tatiana Francois</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="booking.html">Booking</a></p>
+            <div class="social">  
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>
